@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class KafkaConsumerListener {
 
-    @KafkaListener(topics={"${mykafka.topic}"})
+    @KafkaListener(topics={"${myKafka.topic}"})
     public void onMessage(String message){
         System.err.println("KafkaListener receive message: " + message);
     }
